@@ -2,7 +2,10 @@ import json
 import time
 
 class Thing:
-    def __init__(self, id, value=None, timestamp=long(time.time() * 1000L)):
+    def __init__(self, id, value=None, timestamp=None):
+        if timestamp is None:
+            timestamp = long(time.time() * 1000L)
+
         self.id = id
         self.value = value
         self.timestamp = timestamp 

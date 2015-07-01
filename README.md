@@ -16,7 +16,7 @@ Start up at least one node with:
 
 Run the Python program with:
 
-    python dist-db/main.py
+    python dist_db/main.py
 
 # What's here
 
